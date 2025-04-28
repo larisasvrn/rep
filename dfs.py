@@ -16,7 +16,11 @@ def dfs(graph, start, end=None):
     stack = [(start, 0)]  # (vertex, distance)
     path_length = None
 
+<<<<<<< HEAD
     # Добавьте | комментарии | в код программы
+=======
+    # Добавьте комментарии в код программы ++
+>>>>>>> 06c42b7805393d0abac4679695a362b5c1b0d0e8
     while stack:
         vertex, distance = stack.pop()
         if vertex == end:
