@@ -1,7 +1,9 @@
 from collections import defaultdict
 
-
 def dfs(graph, start, end=None):
+    if start not in graph or (end is not None and end not in graph):
+        raise ValueError("Некорректные вершины")
+
     visited = set()
     stack = [(start, 0)]  # (vertex, distance)
     path_length = None
