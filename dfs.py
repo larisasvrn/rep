@@ -1,6 +1,14 @@
 from collections import defaultdict
 
 def dfs(graph, start, end=None):
+    """
+    dfs    
+
+    :param graph:
+    :param start:
+    :param end:
+    :return:
+    """
     if start not in graph or (end is not None and end not in graph):
         raise ValueError("Некорректные вершины")
 
